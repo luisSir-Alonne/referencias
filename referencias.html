@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Proyecto Metodologias</title>
+  <style>
+    *{
+              box-sizing: border-box;
+margin: 0;
+user-select: none;
+padding: 0;
+font-size: 1.1em;
+text-align: justify;
+    }
+    body {
+    font-family: 'Saira', Courier, monospace;
+      background: #0e0a1a;
+height: 100%;
+    }
+    .referencias{
+      color: #39FF14;
+      font-weight: bold;
+      font-size: 1.7em;
+      padding: 10px;
+      display: flex;
+      flex-direction:column;
+      width: 100%;
+      justify-content: start;
+      align-items: start;
+      text-align: justify;
+height: 100%;
+    }
+    .referencia{
+      color: #39FF14;
+      width: 60%;
+
+    }
+    .linea{
+      color: #ffff;
+      height: 2px;
+      width: 100%;
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="contenedor-referencia">
+    <ul class="referencias" id="referencias">
+
+
+    </ul>
+  </div>
+
+
+
+<script>
+  let referencias = document.getElementById("referencias"); 
+
+let ref = [
+"dd",
+
+"dd",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+"d",
+
+]
+ref.forEach(elemento=>{
+  let div = document.createElement("LI"); 
+  div.classList.add("referencia"); 
+  div.innerHTML=`${elemento} <hr class="linea">`
+  referencias.appendChild(div); 
+
+}); 
+
+
+</script>
+</body>
+</html>
