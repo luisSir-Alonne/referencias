@@ -21,28 +21,44 @@ text-align: justify;
       background: #0e0a1a;
 height: 100%;
     }
+    .contenedor-referencia{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+    }
     .referencias{
       color: #39FF14;
       font-weight: bold;
       font-size: 1.7em;
-      padding: 10px;
       display: flex;
-      flex-direction:column;
-      width: 100%;
-      justify-content: start;
-      align-items: start;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: justify;
 height: 100%;
+      width: 90%;
+
     }
     .referencia{
       color: #39FF14;
       width: 60%;
-
+      list-style: none;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      flex-direction: column;
     }
     .linea{
       color: #ffff;
       height: 2px;
-      width: 100%;
+      width: 70%;
+      margin: 20px,0;
 
     }
     
@@ -55,7 +71,6 @@ height: 100%;
 
     </ul>
   </div>
-
 
 
 <script>
@@ -91,3 +106,4 @@ ref.forEach(elemento=>{
 </script>
 </body>
 </html>
+
